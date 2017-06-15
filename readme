@@ -18,7 +18,7 @@ This should place the flask binary in ~/.local/bin/ or so.
 
 Go to backend, where main.py is and run as follows:
 
-FLASK_APP=main.py flask ru--host=0.0.0.0
+FLASK_APP=main.py flask run --host=0.0.0.0
 
 The 0.0.0.0 will assure that it is not running locally but rather globally.
 
@@ -28,7 +28,7 @@ This will start the flask service which will be available via browser.
 
 This should produce meaningful output:
 
-http://IP:5000/apiexample?sample_input=bla
+http://youd_domain:5000/apiexample?sample_input=bla
 
 above will call the process_api_call() method.
 
@@ -36,7 +36,7 @@ above will call the process_api_call() method.
 
 This should produce meaningful output:
 
-http://IP:5000/printprettywebsite?sample_input=bla
+http://your_domain:5000/printprettywebsite?sample_input=bla
 
 above will call the process_website_call() method.
 

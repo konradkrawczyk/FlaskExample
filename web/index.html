@@ -11,7 +11,7 @@
 <script>
 	console.log('Doing struff');
 	//Make an ajax call to the flask api to get the results.
-	$.ajax({url: "http://antibodymap.com:5000/apiexample?sample_input=bla", success: function(result){
+	$.ajax({url: "http://your_domain:5000/apiexample?sample_input=bla", success: function(result){
 		//Result is a json object that needs to be parsed
 		console.log('Received something ');
 		js_object = JSON.parse(result)
