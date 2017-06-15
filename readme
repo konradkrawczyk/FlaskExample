@@ -1,13 +1,52 @@
-Backgorund:
+#Backgorund:
 
 This is a very simple example of how to use flask.
 
-Installation:
+#Installation:
 
 pip install flask
+pip install flask-cors
 
 Might need to do sudo above, so if you do not have sudo rights, do this instead:
 
 pip install --user flask
+pip install --user flask-cors
 
 This should place the flask binary in ~/.local/bin/ or so.
+
+#Running.
+
+Go to backend, where main.py is and run as follows:
+
+FLASK_APP=main.py flask ru--host=0.0.0.0
+
+The 0.0.0.0 will assure that it is not running locally but rather globally.
+
+This will start the flask service which will be available via browser.
+
+#Check that API example works
+
+This should produce meaningful output:
+
+http://IP:5000/apiexample?sample_input=bla
+
+above will call the process_api_call() method.
+
+#Check that Website example works
+
+This should produce meaningful output:
+
+http://IP:5000/printprettywebsite?sample_input=bla
+
+above will call the process_website_call() method.
+
+If you want to learn how to make flask websites ground up properly with bootstrap, please have a look here:
+
+https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#sample-application
+
+#Hybrid Design.
+
+in folder web/ the index file demonstrates how to use flask to fetch data from backend via its api call, process it using javascript and present on the website.
+
+
+
