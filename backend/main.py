@@ -1,7 +1,10 @@
 from flask import Flask
 from flask import request
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+#So we can use it as an api.
+CORS(app)
 
 @app.route('/apiexample', methods=['GET', 'POST'])
 def process_api_call():

@@ -1,0 +1,13 @@
+Backgorund:
+
+This is a very simple example of how to use flask.
+
+Installation:
+
+pip install flask
+
+Might need to do sudo above, so if you do not have sudo rights, do this instead:
+
+pip install --user flask
+
+This should place the flask binary in ~/.local/bin/ or so.
