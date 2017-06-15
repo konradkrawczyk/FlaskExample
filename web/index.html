@@ -1,0 +1,23 @@
+<html>
+<head>
+<!--Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="where_results_are_placed">
+</div>
+</body>
+
+<script>
+	console.log('Doing struff');
+	//Make an ajax call to the flask api to get the results.
+	$.ajax({url: "http://127.0.0.1:5000/apiexample?sample_input=bla", success: function(result){
+		//Result is a json object that needs to be parsed
+		console.log('Received something');
+	}});
+
+</script>
+
+
+
+</html>
